@@ -101,6 +101,17 @@ Provides methods for adding products and retrieving product information.
 
 Usage
 
+ Cloning repository
+   git clone https://github.com/pa1chand/Final-Project-OOPS.git
+   cd final-project-OOPS
+   
+Compile and Run the Application
+javac finalproject/*.java java finalproject.MainClassGUI
+
+Run the Tests
+java -cp .:junit-4.13.2.jar:hamcrest-core-1.3.jar org.junit.runner.JUnitCore finalproject.test.TransactionProcessorTest 
+java -cp .:junit-4.13.2.jar:hamcrest-core-1.3.jar org.junit.runner.JUnitCore finalproject.test.ShoppingCartTest 
+java -cp .:junit-4.13.2.jar:hamcrest-core-1.3.jar org.junit.runner.JUnitCore finalproject.test.ProductCatalogTest
 1. Running the Application
    Compile and run the MainClassGUI.java file.
    The application GUI will appear, providing options for registration, login, product browsing, and cart management.
@@ -132,7 +143,7 @@ Usage
 8. Logging
    All user actions such as login, registration, and order placement are logged.
    Logs can be viewed for tracking purposes.
-
+   
 Implementation Details
 
 MainClassGUI.java
